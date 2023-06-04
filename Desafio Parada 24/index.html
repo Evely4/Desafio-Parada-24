@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista Nome</title>
+  <script>
+    function obterNomeLista() {
+      var nomes = ["Caio","Amanda","Marta","Rafael","Renata","Gabriela","Renan","Enzo","Carla","Andressa"]
+      var lista = Math.floor(Math.random() * nomes.length);
+      return nomes[lista];
+    }
+
+      function exibirNomeLista() {
+      var nomeLista = obterNomeLista();
+      document.getElementById("nomeLista").textContent = nomeLista;
+    }
+  </script>
+</head>
+<body>
+  <h1>Nome Lista</h1>
+  <button onclick="exibirNomeLista()">Obter Nome Lista</button>
+  <p>Nome Lista: <span id="nomeLista"></span></p>
+</body>
+</html>
